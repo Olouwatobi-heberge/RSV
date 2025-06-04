@@ -1,45 +1,59 @@
-nav{
-	background-color:#C5C5C5;	
-	padding: 10px;
+nav {
+    background-color: #C5C5C5;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre subtile pour un effet moderne */
 }
 
 nav ul {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav ul li {
-	/*display: inline;
-	margin-right: 50px;*/
-	margin: 0 15px;
+    margin: 0 15px;
 }
 
 nav a {
-	/*color: white;
-	text-decoration: none;*/
-	color: white;
-	text-decoration: none;
-	padding: 8px 16px;
-	display: block;
-} 
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 18px; /* Augmentation pour une meilleure lisibilité */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
 
 nav a:hover {
-/*text-decoration: underline;*/
-	background-color: #555;
-	border-radius: 4px;
+    background-color: #555;
+    border-radius: 4px;
+    transform: scale(1.05); /* Effet léger au survol */
 }
 
-@media (max-width: 600px)
-{
-	nav ul {
-		flex-direction: column;
-		align-items: center;
-	}
+@media (max-width: 768px) {
+    nav {
+        padding: 15px; /* Adaptation du padding */
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* Espacement entre les éléments */
+    }
+    
+    nav ul li {
+        width: 100%; /* Pleine largeur pour une meilleure accessibilité */
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 16px; /* Réduction pour éviter une surcharge visuelle */
+        width: 90%; /* Ajustement pour un bon équilibre */
+    }
 }
+
 
 
 
