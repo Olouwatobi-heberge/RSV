@@ -92,16 +92,18 @@ ul li {
 	text-align: justify;
 }
 
-
 #Contact {
     background-color: #ffffff;
     padding: 30px;
     border-radius: 8px;
     margin-top: 20px;
-    max-width: 600px; /* Limite la largeur pour éviter un affichage trop étiré */
+    max-width: 600px; /* Largeur limitée pour éviter l'étalement excessif */
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajout d'un effet moderne */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les éléments */
 }
 
 h2 {
@@ -112,6 +114,7 @@ h2 {
 }
 
 .form-group {
+    width: 100%; /* Assure que les champs couvrent bien toute la largeur */
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
@@ -162,6 +165,7 @@ button:hover {
 @media (max-width: 600px) {
     #Contact {
         padding: 20px; /* Réduction du padding sur petits écrans */
+        width: 90%; /* Ajustement pour couvrir les inputs */
     }
 
     h2 {
